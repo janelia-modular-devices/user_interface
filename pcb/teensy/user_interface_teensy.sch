@@ -30,7 +30,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:components
 LIBS:user_interface_teensy
-LIBS:user_interface_teensy-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
@@ -158,8 +157,6 @@ Wire Wire Line
 	6400 1700 6000 1700
 Wire Wire Line
 	6400 1800 6100 1800
-Wire Wire Line
-	6400 2000 6100 2000
 $Comp
 L VEE #PWR05
 U 1 1 5797B6E9
@@ -234,8 +231,6 @@ Text Label 6100 1600 0    60   ~ 0
 RESET
 Text Label 6100 1800 0    60   ~ 0
 SDCS
-Text Label 6100 2000 0    60   ~ 0
-CD
 NoConn ~ 7400 1100
 $Comp
 L MODULAR_DEVICE_TEENSY_MALE MDT1
@@ -977,10 +972,6 @@ Wire Wire Line
 Text Label 950  1850 0    60   ~ 0
 OLEDDC
 Wire Wire Line
-	3850 2150 3950 2150
-Text Label 3950 2150 0    60   ~ 0
-CD
-Wire Wire Line
 	3850 2050 3950 2050
 Wire Wire Line
 	3850 1950 3950 1950
@@ -994,23 +985,21 @@ Wire Wire Line
 	3850 1550 3950 1550
 Wire Wire Line
 	3850 1450 3950 1450
-Wire Wire Line
-	3850 1350 3950 1350
 Text Label 3950 2050 0    60   ~ 0
 BTN_ENC
-Text Label 3950 1950 0    60   ~ 0
+Text Label 3950 2150 0    60   ~ 0
 BTN_CALL
 Text Label 3950 1850 0    60   ~ 0
 LEFT
-Text Label 3950 1750 0    60   ~ 0
+Text Label 3950 1950 0    60   ~ 0
 RIGHT
 Text Label 3950 1650 0    60   ~ 0
 UP
-Text Label 3950 1550 0    60   ~ 0
+Text Label 3950 1750 0    60   ~ 0
 DOWN
 Text Label 3950 1450 0    60   ~ 0
 BTN_A
-Text Label 3950 1350 0    60   ~ 0
+Text Label 3950 1550 0    60   ~ 0
 BTN_B
 Wire Wire Line
 	1350 1350 1050 1350
@@ -1020,4 +1009,41 @@ Text Label 1050 1350 0    60   ~ 0
 ENC_A
 Text Label 1050 1450 0    60   ~ 0
 ENC_B
+NoConn ~ 6400 2000
+Wire Wire Line
+	3850 2150 3950 2150
+NoConn ~ 3850 1350
+$Comp
+L HEADER_01X02_SHR S1
+U 1 1 57C083F3
+P 7900 4700
+F 0 "S1" H 7900 4850 50  0000 C CNN
+F 1 "HEADER_01X02_SHR" V 8000 4700 50  0000 C CNN
+F 2 "user_interface_teensy:Header_Shrouded_2_Pin" H 7800 4750 60  0001 C CNN
+F 3 "" H 7900 4700 60  0000 C CNN
+F 4 "digikey" H 8000 4950 60  0001 C CNN "Vendor"
+F 5 "WM4800-ND" H 8100 5050 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 2POS .100 VERT GOLD" H 8200 5150 60  0001 C CNN "Description"
+	1    7900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR036
+U 1 1 57C086A8
+P 7650 4800
+F 0 "#PWR036" H 7650 4550 50  0001 C CNN
+F 1 "GND" H 7655 4627 50  0000 C CNN
+F 2 "" H 7650 4800 50  0000 C CNN
+F 3 "" H 7650 4800 50  0000 C CNN
+	1    7650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4800 7650 4750
+Wire Wire Line
+	7650 4750 7700 4750
+Wire Wire Line
+	7700 4650 7150 4650
+Text Label 7150 4650 0    60   ~ 0
+B_BTN_CALL
 $EndSCHEMATC
