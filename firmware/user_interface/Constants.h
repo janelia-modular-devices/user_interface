@@ -38,7 +38,7 @@ extern const int cs_pin;
 extern const int in_pin;
 extern const int lights_pin;
 
-extern HardwareSerial& display_serial;
+extern HardwareSerial & display_serial;
 
 extern const int enc_a_pin;
 extern const int enc_b_pin;

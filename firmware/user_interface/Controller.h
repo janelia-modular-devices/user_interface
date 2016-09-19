@@ -20,7 +20,7 @@ public:
   Controller();
   void setup();
   void update();
-  ModularDevice::ModularServer& getModularServer();
+  ModularDevice::ModularServer & getModularServer();
 
   void executeStandaloneCallback();
   bool getLedsPowered();

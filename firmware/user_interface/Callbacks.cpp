@@ -13,19 +13,19 @@ namespace callbacks
 // Callbacks must be non-blocking (avoid 'delay')
 //
 // modular_server.getParameterValue must be cast to either:
-// const char*
+// const char *
 // long
 // double
 // bool
-// ArduinoJson::JsonArray&
-// ArduinoJson::JsonObject&
+// ArduinoJson::JsonArray &
+// ArduinoJson::JsonObject &
 //
 // For more info read about ArduinoJson parsing https://github.com/janelia-arduino/ArduinoJson
 //
 // modular_server.getSavedVariableValue type must match the saved variable default type
 // modular_server.setSavedVariableValue type must match the saved variable default type
 
-ModularDevice::ModularServer& modular_server = controller.getModularServer();
+ModularDevice::ModularServer & modular_server = controller.getModularServer();
 
 IndexedContainer<uint32_t,constants::INDEXED_CHANNELS_COUNT_MAX> indexed_channels;
 IndexedContainer<PulseInfo,constants::INDEXED_PULSES_COUNT_MAX> indexed_pulses;
@@ -50,14 +50,14 @@ void setChannelOffCallback()
 
 void setChannelsOnCallback()
 {
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   controller.setChannelsOn(channels);
 }
 
 void setChannelsOffCallback()
 {
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   controller.setChannelsOff(channels);
 }
@@ -70,7 +70,7 @@ void toggleChannelCallback()
 
 void toggleChannelsCallback()
 {
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   controller.toggleChannels(channels);
 }
@@ -108,7 +108,7 @@ void setChannelOffAllOthersOnCallback()
 
 void setChannelsOnAllOthersOffCallback()
 {
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   EventController::event_controller.removeAllEvents();
   controller.setChannelsOnAllOthersOff(channels);
@@ -116,7 +116,7 @@ void setChannelsOnAllOthersOffCallback()
 
 void setChannelsOffAllOthersOnCallback()
 {
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   EventController::event_controller.removeAllEvents();
   controller.setChannelsOffAllOthersOn(channels);
@@ -205,7 +205,7 @@ void addPulseCenteredCallback()
   {
     return;
   }
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   int index = indexed_channels.add(channels);
   long delay = modular_server.getParameterValue(constants::delay_parameter_name);
@@ -232,7 +232,7 @@ void addPwmPeriodOnDurationCallback()
   {
     return;
   }
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   int index = indexed_channels.add(channels);
   long delay = modular_server.getParameterValue(constants::delay_parameter_name);
@@ -256,7 +256,7 @@ void addPwmFrequencyDutyCycleCallback()
   {
     return;
   }
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   int index = indexed_channels.add(channels);
   long delay = modular_server.getParameterValue(constants::delay_parameter_name);
@@ -285,7 +285,7 @@ void addSpikeAndHoldCallback()
   {
     return;
   }
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   int index = indexed_channels.add(channels);
   long delay = modular_server.getParameterValue(constants::delay_parameter_name);
@@ -319,7 +319,7 @@ void startPwmPeriodOnDurationCallback()
     modular_server.writeResultToResponse(-1);
     return;
   }
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   int index = indexed_channels.add(channels);
   long delay = modular_server.getParameterValue(constants::delay_parameter_name);
@@ -346,7 +346,7 @@ void startPwmFrequencyDutyCycleCallback()
     modular_server.writeResultToResponse(-1);
     return;
   }
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   int index = indexed_channels.add(channels);
   long delay = modular_server.getParameterValue(constants::delay_parameter_name);
@@ -378,7 +378,7 @@ void startSpikeAndHoldCallback()
     modular_server.writeResultToResponse(-1);
     return;
   }
-  ArduinoJson::JsonArray& channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
+  ArduinoJson::JsonArray & channels_array = modular_server.getParameterValue(constants::channels_parameter_name);
   uint32_t channels = arrayToChannels(channels_array);
   int index = indexed_channels.add(channels);
   long delay = modular_server.getParameterValue(constants::delay_parameter_name);
@@ -404,7 +404,7 @@ void stopPulseWaveCallback()
   indexed_pulses.remove(pulse_wave_index);
 }
 
-uint32_t arrayToChannels(ArduinoJson::JsonArray& channels_array)
+uint32_t arrayToChannels(ArduinoJson::JsonArray & channels_array)
 {
   uint32_t channels = 0;
   uint32_t bit = 1;
