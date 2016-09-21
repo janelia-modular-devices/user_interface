@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/polidorop/git/modular-devices/user_interface/pcb/teensy/user_interface_teensy.sch</source>
+    <date>Fri 26 Aug 2016 03:30:14 PM EDT</date>
+    <tool>Eeschema 4.1.0-alpha+201608211231+7083~46~ubuntu16.04.1-product</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>user_interface_teensy</title>
+        <company>Janelia</company>
+        <rev>1.0</rev>
+        <date/>
+        <source>user_interface_teensy.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="NHD1">
+      <value>NHD-ASC3-169</value>
+      <footprint>user_interface_teensy:NHD-ASC3</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">NHD-1.69-160128ASC3-ND</field>
+        <field name="Description">1.69in SERIAL COLOR OLED</field>
+      </fields>
+      <libsource lib="components" part="NHD-ASC3-169"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5797B490</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>user_interface_teensy:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-4536-1-ND</field>
+        <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
+      </fields>
+      <libsource lib="components" part="10uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5797B78F</tstamp>
+    </comp>
+    <comp ref="MDT1">
+      <value>MODULAR_DEVICE_TEENSY_MALE</value>
+      <footprint>user_interface_teensy:MODULAR_DEVICE_TEENSY_MALE</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">S1011E-16-ND</field>
+        <field name="Description">16 Position Header Through Hole Male Pins</field>
+        <field name="PartCount">2</field>
+      </fields>
+      <libsource lib="components" part="MODULAR_DEVICE_TEENSY_MALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF0F58</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>JOYSTICK</value>
+      <footprint>user_interface_teensy:JOYSTICK</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">GH7455-ND</field>
+        <field name="Description">Navigation Switch 2 Axis Digital</field>
+      </fields>
+      <libsource lib="components" part="JOYSTICK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF4171</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>KT_SWITCH</value>
+      <footprint>user_interface_teensy:KT_SWITCH</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">CKN1860CT-ND</field>
+        <field name="Description">SWITCH TACTILE SPST-NO 1VA 32V</field>
+      </fields>
+      <libsource lib="components" part="KT_SWITCH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF41F2</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>MAX6817</value>
+      <footprint>user_interface_teensy:MAX6817</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">MAX6817EUT+TCT-ND</field>
+        <field name="Description">IC DEBOUNCER SWITCH DUAL SOT23-6</field>
+      </fields>
+      <libsource lib="components" part="MAX6817"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF429D</tstamp>
+    </comp>
+    <comp ref="E1">
+      <value>ENCODER_62A11-02-P</value>
+      <footprint>user_interface_teensy:ENCODER_62AVD</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">GH7384-ND</field>
+        <field name="Description">ENCODER OPT 1/2in 32POS PB PC MNT</field>
+      </fields>
+      <libsource lib="components" part="ENCODER_62A11-02-P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF44F6</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF_2917_POL</value>
+      <footprint>user_interface_teensy:SM2917_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-8527-1-ND</field>
+        <field name="Description">CAP TANT 10UF 35V 10% 2917</field>
+      </fields>
+      <libsource lib="components" part="10uF_2917_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF5261</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MAX6817</value>
+      <footprint>user_interface_teensy:MAX6817</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">MAX6817EUT+TCT-ND</field>
+        <field name="Description">IC DEBOUNCER SWITCH DUAL SOT23-6</field>
+      </fields>
+      <libsource lib="components" part="MAX6817"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF5759</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>0.1uF</value>
+      <footprint>user_interface_teensy:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-3586-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
+      </fields>
+      <libsource lib="components" part="0.1uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF5839</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>user_interface_teensy:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-3586-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
+      </fields>
+      <libsource lib="components" part="0.1uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF65C2</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>user_interface_teensy:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-3586-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
+      </fields>
+      <libsource lib="components" part="0.1uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF6655</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF</value>
+      <footprint>user_interface_teensy:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-3586-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
+      </fields>
+      <libsource lib="components" part="0.1uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF6D31</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MAX6817</value>
+      <footprint>user_interface_teensy:MAX6817</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">MAX6817EUT+TCT-ND</field>
+        <field name="Description">IC DEBOUNCER SWITCH DUAL SOT23-6</field>
+      </fields>
+      <libsource lib="components" part="MAX6817"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF6FEB</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>MAX6817</value>
+      <footprint>user_interface_teensy:MAX6817</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">MAX6817EUT+TCT-ND</field>
+        <field name="Description">IC DEBOUNCER SWITCH DUAL SOT23-6</field>
+      </fields>
+      <libsource lib="components" part="MAX6817"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF700B</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>0.1uF</value>
+      <footprint>user_interface_teensy:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-3586-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
+      </fields>
+      <libsource lib="components" part="0.1uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF702B</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>0.1uF</value>
+      <footprint>user_interface_teensy:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-3586-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
+      </fields>
+      <libsource lib="components" part="0.1uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF7042</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>KT_SWITCH</value>
+      <footprint>user_interface_teensy:KT_SWITCH</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">CKN1860CT-ND</field>
+        <field name="Description">SWITCH TACTILE SPST-NO 1VA 32V</field>
+      </fields>
+      <libsource lib="components" part="KT_SWITCH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF85AC</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>KT_SWITCH</value>
+      <footprint>user_interface_teensy:KT_SWITCH</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">CKN1860CT-ND</field>
+        <field name="Description">SWITCH TACTILE SPST-NO 1VA 32V</field>
+      </fields>
+      <libsource lib="components" part="KT_SWITCH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57BF8694</tstamp>
+    </comp>
+    <comp ref="S1">
+      <value>HEADER_01X02_SHR</value>
+      <footprint>user_interface_teensy:Header_Shrouded_2_Pin</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">WM4800-ND</field>
+        <field name="Description">CONN HEADER 2POS .100 VERT GOLD</field>
+      </fields>
+      <libsource lib="components" part="HEADER_01X02_SHR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57C083F3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="components" part="0.1uF">
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint">user_interface_teensy:SM1210</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-3586-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="10uF">
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10uF</field>
+        <field name="Footprint">user_interface_teensy:SM1210</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-4536-1-ND</field>
+        <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="10uF_2917_POL">
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10uF_2917_POL</field>
+        <field name="Footprint">user_interface_teensy:SM2917_POL</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-8527-1-ND</field>
+        <field name="Description">CAP TANT 10UF 35V 10% 2917</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="ENCODER_62A11-02-P">
+      <fields>
+        <field name="Reference">E</field>
+        <field name="Value">ENCODER_62A11-02-P</field>
+        <field name="Footprint">user_interface_teensy:ENCODER_62AVD</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">GH7384-ND</field>
+        <field name="Description">ENCODER OPT 1/2in 32POS PB PC MNT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="BTN_B" type="passive"/>
+        <pin num="3" name="BTN_A" type="passive"/>
+        <pin num="4" name="OUT_B" type="output"/>
+        <pin num="5" name="OUT_A" type="output"/>
+        <pin num="6" name="+5VDC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="HEADER_01X02_SHR">
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">HEADER_01X02_SHR</field>
+        <field name="Footprint">user_interface_teensy:Header_Shrouded_2_Pin</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">WM4800-ND</field>
+        <field name="Description">CONN HEADER 2POS .100 VERT GOLD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="JOYSTICK">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">JOYSTICK</field>
+        <field name="Footprint">user_interface_teensy:JOYSTICK</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">GH7455-ND</field>
+        <field name="Description">Navigation Switch 2 Axis Digital</field>
+      </fields>
+      <pins>
+        <pin num="COM" name="COM" type="passive"/>
+        <pin num="D" name="DOWN" type="passive"/>
+        <pin num="L" name="LEFT" type="passive"/>
+        <pin num="R" name="RIGHT" type="passive"/>
+        <pin num="U" name="UP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="KT_SWITCH">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">KT_SWITCH</field>
+        <field name="Footprint">user_interface_teensy:KT_SWITCH</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">CKN1860CT-ND</field>
+        <field name="Description">SWITCH TACTILE SPST-NO 1VA 32V</field>
+      </fields>
+      <pins>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="MAX6817">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX6817</field>
+        <field name="Footprint">user_interface_teensy:MAX6817</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">MAX6817EUT+TCT-ND</field>
+        <field name="Description">IC DEBOUNCER SWITCH DUAL SOT23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN1" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="IN2" type="passive"/>
+        <pin num="4" name="OUT2" type="output"/>
+        <pin num="5" name="Vcc" type="power_in"/>
+        <pin num="6" name="OUT1" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="MODULAR_DEVICE_TEENSY_MALE">
+      <fields>
+        <field name="Reference">MDT</field>
+        <field name="Value">MODULAR_DEVICE_TEENSY_MALE</field>
+        <field name="Footprint">user_interface_teensy:MODULAR_DEVICE_TEENSY_MALE</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">S1011E-16-ND</field>
+        <field name="Description">16 Position Header Through Hole Male Pins</field>
+        <field name="PartCount">2</field>
+      </fields>
+      <pins>
+        <pin num="2" name="D2" type="BiDi"/>
+        <pin num="3" name="D3/PWM/CANTX" type="BiDi"/>
+        <pin num="4" name="D4/PWM/CANRX" type="BiDi"/>
+        <pin num="5" name="D5/PWM/TX1B" type="BiDi"/>
+        <pin num="6" name="D6/PWM" type="BiDi"/>
+        <pin num="9" name="D9/RX2/PWM/ICP/CSB/I2SBCLK" type="BiDi"/>
+        <pin num="10" name="D10/TX2/CS/PWM/ICP" type="BiDi"/>
+        <pin num="11" name="D11/DOUT/I2SMCLK" type="BiDi"/>
+        <pin num="12" name="D12/DIN" type="BiDi"/>
+        <pin num="13" name="D13/LED/SCK/I2SRX" type="BiDi"/>
+        <pin num="14" name="D14/A0/SCKB" type="BiDi"/>
+        <pin num="15" name="D15/A1/TOUCH/CSB" type="BiDi"/>
+        <pin num="16" name="D16/A2/TOUCH" type="BiDi"/>
+        <pin num="17" name="D17/A3/TOUCH" type="BiDi"/>
+        <pin num="18" name="D18/A4/SDA0/TOUCH" type="BiDi"/>
+        <pin num="19" name="D19/A5/SCL0/TOUCH" type="BiDi"/>
+        <pin num="20" name="D20/A6/PWM/CSB" type="BiDi"/>
+        <pin num="21" name="D21/A7/PWM/RX1B/CSB" type="BiDi"/>
+        <pin num="22" name="D22/A8/TOUCH/PWM/ICP/I2STX" type="BiDi"/>
+        <pin num="23" name="D23/A9/TOUCH/PWM/ICP/I2SLRCLK" type="BiDi"/>
+        <pin num="24" name="D24/ICP/I2SBCLKB" type="BiDi"/>
+        <pin num="25" name="D25/PWM/TOUCH/I2SLRCLK2" type="BiDi"/>
+        <pin num="28" name="D28/A17/I2SMCLKB" type="BiDi"/>
+        <pin num="29" name="D29/A18/SCL1" type="BiDi"/>
+        <pin num="30" name="D30/A19/SDA1" type="BiDi"/>
+        <pin num="3V3" name="3.3v_(250_mA_max)" type="passive"/>
+        <pin num="AGND" name="AGND" type="passive"/>
+        <pin num="AREF" name="AREF" type="passive"/>
+        <pin num="DAC" name="A14/DAC" type="BiDi"/>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="VDD" name="VDD_(+9-42VDC)" type="passive"/>
+        <pin num="VEE" name="VEE_(+4-5VDC)" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="components" part="NHD-ASC3-169">
+      <fields>
+        <field name="Reference">NHD</field>
+        <field name="Value">NHD-ASC3-169</field>
+        <field name="Footprint">user_interface_teensy:NHD-ASC3</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">NHD-1.69-160128ASC3-ND</field>
+        <field name="Description">1.69in SERIAL COLOR OLED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MOSI" type="BiDi"/>
+        <pin num="2" name="SCK" type="BiDi"/>
+        <pin num="3" name="D/C" type="BiDi"/>
+        <pin num="4" name="~RESET" type="passive"/>
+        <pin num="5" name="OLEDCS" type="BiDi"/>
+        <pin num="6" name="SDCS" type="BiDi"/>
+        <pin num="7" name="MISO" type="BiDi"/>
+        <pin num="8" name="CD" type="BiDi"/>
+        <pin num="9" name="3Vo" type="power_out"/>
+        <pin num="10" name="VDD" type="power_in"/>
+        <pin num="11" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="components">
+      <uri>/home/polidorop/git/kicad/kicad-libraries/components.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="S1" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="SW2" pin="3"/>
+      <node ref="C7" pin="2"/>
+      <node ref="SW3" pin="3"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="MDT1" pin="GND"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="J1" pin="COM"/>
+      <node ref="E1" pin="2"/>
+      <node ref="E1" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="NHD1" pin="11"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U4" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C3" pin="2"/>
+    </net>
+    <net code="2" name="VEE">
+      <node ref="C6" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="NHD1" pin="10"/>
+      <node ref="MDT1" pin="VEE"/>
+      <node ref="U3" pin="5"/>
+      <node ref="U4" pin="5"/>
+      <node ref="E1" pin="6"/>
+      <node ref="U2" pin="5"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="3" name="/B_BTN_ENC">
+      <node ref="U1" pin="1"/>
+      <node ref="E1" pin="3"/>
+    </net>
+    <net code="4" name="/ENC_B">
+      <node ref="MDT1" pin="4"/>
+      <node ref="E1" pin="4"/>
+    </net>
+    <net code="5" name="/ENC_A">
+      <node ref="MDT1" pin="3"/>
+      <node ref="E1" pin="5"/>
+    </net>
+    <net code="6" name="/BTN_CALL">
+      <node ref="MDT1" pin="14"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="7" name="/BTN_ENC">
+      <node ref="U1" pin="6"/>
+      <node ref="MDT1" pin="15"/>
+    </net>
+    <net code="8" name="/B_BTN_CALL">
+      <node ref="SW1" pin="2"/>
+      <node ref="S1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="9" name="Net-(MDT1-PadVDD)">
+      <node ref="MDT1" pin="VDD"/>
+    </net>
+    <net code="10" name="/DOWN">
+      <node ref="U3" pin="4"/>
+      <node ref="MDT1" pin="18"/>
+    </net>
+    <net code="11" name="/OLEDDC">
+      <node ref="NHD1" pin="3"/>
+      <node ref="MDT1" pin="29"/>
+    </net>
+    <net code="12" name="/BTN_A">
+      <node ref="U4" pin="6"/>
+      <node ref="MDT1" pin="21"/>
+    </net>
+    <net code="13" name="/BTN_B">
+      <node ref="MDT1" pin="20"/>
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="14" name="/UP">
+      <node ref="U3" pin="6"/>
+      <node ref="MDT1" pin="19"/>
+    </net>
+    <net code="15" name="/LEFT">
+      <node ref="MDT1" pin="17"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="16" name="/RIGHT">
+      <node ref="U2" pin="4"/>
+      <node ref="MDT1" pin="16"/>
+    </net>
+    <net code="17" name="/SDCS">
+      <node ref="MDT1" pin="9"/>
+      <node ref="NHD1" pin="6"/>
+    </net>
+    <net code="18" name="/B_BTN_B">
+      <node ref="SW3" pin="2"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="19" name="/B_BTN_A">
+      <node ref="U4" pin="1"/>
+      <node ref="SW2" pin="2"/>
+    </net>
+    <net code="20" name="Net-(NHD1-Pad8)">
+      <node ref="NHD1" pin="8"/>
+    </net>
+    <net code="21" name="Net-(MDT1-Pad22)">
+      <node ref="MDT1" pin="22"/>
+    </net>
+    <net code="22" name="/SCK">
+      <node ref="MDT1" pin="13"/>
+      <node ref="NHD1" pin="2"/>
+    </net>
+    <net code="23" name="/OLEDCS">
+      <node ref="NHD1" pin="5"/>
+      <node ref="MDT1" pin="10"/>
+    </net>
+    <net code="24" name="/RESET">
+      <node ref="MDT1" pin="2"/>
+      <node ref="NHD1" pin="4"/>
+    </net>
+    <net code="25" name="/MISO">
+      <node ref="NHD1" pin="7"/>
+      <node ref="MDT1" pin="12"/>
+    </net>
+    <net code="26" name="Net-(MDT1-Pad24)">
+      <node ref="MDT1" pin="24"/>
+    </net>
+    <net code="27" name="Net-(MDT1-Pad23)">
+      <node ref="MDT1" pin="23"/>
+    </net>
+    <net code="28" name="Net-(MDT1-Pad30)">
+      <node ref="MDT1" pin="30"/>
+    </net>
+    <net code="29" name="Net-(MDT1-Pad6)">
+      <node ref="MDT1" pin="6"/>
+    </net>
+    <net code="30" name="Net-(MDT1-Pad5)">
+      <node ref="MDT1" pin="5"/>
+    </net>
+    <net code="31" name="Net-(NHD1-Pad9)">
+      <node ref="NHD1" pin="9"/>
+    </net>
+    <net code="32" name="Net-(MDT1-Pad28)">
+      <node ref="MDT1" pin="28"/>
+    </net>
+    <net code="33" name="Net-(MDT1-PadAGND)">
+      <node ref="MDT1" pin="AGND"/>
+    </net>
+    <net code="34" name="Net-(MDT1-PadAREF)">
+      <node ref="MDT1" pin="AREF"/>
+    </net>
+    <net code="35" name="Net-(MDT1-PadDAC)">
+      <node ref="MDT1" pin="DAC"/>
+    </net>
+    <net code="36" name="/MOSI">
+      <node ref="MDT1" pin="11"/>
+      <node ref="NHD1" pin="1"/>
+    </net>
+    <net code="37" name="Net-(MDT1-Pad25)">
+      <node ref="MDT1" pin="25"/>
+    </net>
+    <net code="38" name="/B_RIGHT">
+      <node ref="U2" pin="3"/>
+      <node ref="J1" pin="R"/>
+    </net>
+    <net code="39" name="/B_LEFT">
+      <node ref="U2" pin="1"/>
+      <node ref="J1" pin="L"/>
+    </net>
+    <net code="40" name="Net-(MDT1-Pad3V3)">
+      <node ref="MDT1" pin="3V3"/>
+    </net>
+    <net code="41" name="/B_DOWN">
+      <node ref="U3" pin="3"/>
+      <node ref="J1" pin="D"/>
+    </net>
+    <net code="42" name="/B_UP">
+      <node ref="U3" pin="1"/>
+      <node ref="J1" pin="U"/>
+    </net>
+  </nets>
+</export>
